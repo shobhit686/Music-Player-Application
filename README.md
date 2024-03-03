@@ -5,7 +5,7 @@ This project is a clone design of Spotify.com but with changes in its features, 
 ![Site Image](<assets/Readme utilities/scr1.png>)
 
 ### How to Setup and Run the Project
-    1. Clone or download the repository in your local system. Please ensure that the file structure remains the same. Also ensure that the project is run on port 3000.
+    1. Clone or download the repository in your local system. Please ensure that the file structure remains the same.
     2. Use any browser to render the HTML
 
 ### Dependencies
