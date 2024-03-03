@@ -240,6 +240,9 @@ body {
 
 .below-seek {
     display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
     justify-content: space-between;
     color: black;
     padding: 0px 8px;

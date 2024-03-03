@@ -19,7 +19,7 @@ function secondsToMinutesSeconds(seconds) {
 async function getSongs(folder) {
     currFolder = folder + "/"
     console.log(currFolder)
-    let a = await fetch(`http://127.0.0.1:3000/Spotify-clone/${folder}`);
+    let a = await fetch(`http://127.0.0.1:3000/Music-Player-Application/${folder}`);
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
@@ -35,7 +35,7 @@ async function getSongs(folder) {
 }
 
 const playMusic = (track, pause=false)=>{
-    currentSong.src = `http://127.0.0.1:3000/Spotify-clone/${currFolder}` + track;
+    currentSong.src = `http://127.0.0.1:3000/SMusic-Player-Application/${currFolder}` + track;
     console.log(currentSong.src)
     if(!pause){
         currentSong.play()
