@@ -19,8 +19,9 @@ function secondsToMinutesSeconds(seconds) {
 async function getSongs(folder) {
     currFolder = folder + "/"
     console.log(currFolder)
-    let a = await fetch(`http://127.0.0.1:3000/Music-Player-Application/${folder}`);
+    let a = await fetch(`http://127.0.0.1:3000/${folder}`);
     let response = await a.text();
+    console.log(response)
     let div = document.createElement("div");
     div.innerHTML = response;
     let as = div.getElementsByTagName("a");
@@ -35,7 +36,7 @@ async function getSongs(folder) {
 }
 
 const playMusic = (track, pause=false)=>{
-    currentSong.src = `http://127.0.0.1:3000/SMusic-Player-Application/${currFolder}` + track;
+    currentSong.src = `http://127.0.0.1:3000/${currFolder}` + track;
     console.log(currentSong.src)
     if(!pause){
         currentSong.play()
