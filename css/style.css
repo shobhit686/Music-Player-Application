@@ -149,6 +149,7 @@ body {
 
 .nav svg {
     padding: 12px 0px;
+    cursor: pointer;
 }
 
 .playbar {
